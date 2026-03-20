@@ -1,6 +1,5 @@
 from sklearn.cluster import KMeans
 
-def run_kmeans(X, n_clusters=4):
-    model = KMeans(n_clusters=n_clusters, random_state=42)
-    labels = model.fit_predict(X)
-    return labels
+def run_kmeans(X_scaled):
+    model = KMeans(n_clusters=2, random_state=42)
+    return model.fit_predict(X_scaled)

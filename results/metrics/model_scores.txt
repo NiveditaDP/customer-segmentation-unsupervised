@@ -1,0 +1,4 @@
+KMeans Silhouette: 0.118
+Hierarchical Silhouette: 0.118
+DBSCAN: Failed
+GMM Silhouette: 0.118
