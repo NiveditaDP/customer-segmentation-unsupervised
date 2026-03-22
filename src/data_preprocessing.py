@@ -1,12 +1,17 @@
 import pandas as pd
 
-def load_data(path):
-    return pd.read_csv(path)
+def preprocess_pipeline(file_path):
+    # Load data
+    df = pd.read_csv(file_path)
 
-def preprocess_pipeline(path):
-    df = load_data(path)
-    
-    # handle missing values
+    # Drop Customer ID (not useful)
+    if 'Customer ID' in df.columns:
+        df = df.drop('Customer ID', axis=1)
+
+    # Handle missing values
     df = df.dropna()
-    
+
+    # Encode categorical variables
+    df = pd.get_dummies(df, drop_first=True)
+
     return df
