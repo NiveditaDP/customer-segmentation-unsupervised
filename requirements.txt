@@ -4,3 +4,62 @@ matplotlib
 seaborn
 scikit-learn
 scipy
+jupyter
+
+
+• pandas - Data preprocessing  
+• numpy - Numerical operations  
+• matplotlib & seaborn - Visualization  
+• scikit-learn - ML algorithms & evaluation  
+• scipy - Hierarchical clustering  
+• jupyter - Development environment  
+
+Technology Stack Used
+1. Data Handling & Processing
+pandas
+Used for:
+Loading dataset
+Data cleaning
+Handling missing values
+Data manipulation
+numpy
+Used for:
+Numerical operations
+Array transformations
+Mathematical computations
+
+2. Data Visualization
+matplotlib
+Used for:
+Basic plotting
+PCA visualization
+Cluster scatter plots
+seaborn
+Used for:
+Advanced visualizations
+Heatmaps
+Distribution plots
+
+3. Machine Learning
+scikit-learn
+Core library used for:
+K-Means Clustering
+Hierarchical Clustering
+DBSCAN
+Gaussian Mixture Model
+PCA (Dimensionality Reduction)
+Scaling (StandardScaler)
+Evaluation metrics (Silhouette Score, Davies-Bouldin Index)
+
+4. Scientific Computation
+scipy
+Used for:
+Hierarchical clustering
+Distance calculations
+
+5. Development Environment
+jupyter
+Used for:
+Running notebooks
+Step-by-step analysis
+EDA and visualization
