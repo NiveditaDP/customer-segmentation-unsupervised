@@ -74,6 +74,58 @@ The project includes multiple unsupervised learning techniques:
 - ✅ DBSCAN  
 - ✅ Gaussian Mixture Model (GMM)  
 
+# ⚙️ Algorithms Used
+
+## 🔹 K-Means Clustering
+K-Means is a centroid-based clustering algorithm that partitions data into K clusters by minimizing the distance between data points and their respective cluster centroids.
+
+- Efficient and scalable
+- Works well for large datasets
+- Selected as the best model in this project
+
+---
+
+## 🔹 Hierarchical Clustering
+Hierarchical clustering builds a tree-like structure (dendrogram) by merging or splitting clusters based on distance.
+
+- Does not require pre-specifying number of clusters
+- Useful for understanding data hierarchy
+
+---
+
+## 🔹 DBSCAN (Density-Based Spatial Clustering)
+DBSCAN groups data points based on density and identifies noise points.
+
+- Can detect outliers
+- Does not require number of clusters beforehand
+- Performance depends on parameter tuning
+
+---
+
+## 🔹 Gaussian Mixture Model (GMM)
+GMM assumes data is generated from a mixture of Gaussian distributions.
+
+- Probabilistic clustering approach
+- More flexible than K-Means
+- Handles overlapping clusters better
+
+# 📊 Sample Visualizations
+
+## 🔹 K-Means Clustering
+![KMeans Clusters](results/cluster_plots/kmeans.png)
+
+---
+
+## 🔹 Hierarchical Clustering
+![Hierarchical Clusters](results/cluster_plots/hierarchical.png)
+
+---
+
+## 🔹 DBSCAN Clustering
+![DBSCAN Clusters](results/cluster_plots/dbscan.png)
+
+---
+
 ---
 
 ## 5️⃣ Optimal Cluster Selection
@@ -187,42 +239,51 @@ CLV = Income Level × Insurance Products Owned
 customer-segmentation-unsupervised/
 │
 ├── data/
-│ ├── raw/
-│ ├── processed/
+│   ├── raw/
+│   │   └── customer_dataset.csv        
+│   │
+│   ├── processed/
+│       └── featured_customer_data.csv  
 │
 ├── notebooks/
-│ ├── 01_data_preprocessing.ipynb
-│ ├── 02_eda.ipynb
-│ ├── 03_feature_engineering.ipynb
-│ ├── 04_clustering_models.ipynb
-│ ├── 05_model_comparison.ipynb
-│ ├── 06_visualization.ipynb
+│   ├── 01_data_preprocessing.ipynb     
+│   ├── 02_eda.ipynb                  
+│   ├── 03_feature_engineering.ipynb   
+│   ├── 04_clustering_models.ipynb    
+│   ├── 05_model_comparison.ipynb      
+│   ├── 06_visualization.ipynb         
 │
 ├── src/
-│ ├── data_preprocessing.py
-│ ├── feature_engineering.py
-│ ├── evaluation.py
-│ ├── utils.py
-│ ├── clustering/
+│   ├── data_preprocessing.py          
+│   ├── feature_engineering.py         
+│   ├── evaluation.py                  
+│   ├── utils.py                       
+│   │
+│   ├── clustering/
+│       ├── kmeans.py                  
+│       ├── hierarchical.py           
+│       ├── dbscan.py                  
+│       ├── gmm.py                     
 │
 ├── results/
-│ ├── cluster_plots/
-│ ├── pca_outputs/
-│ ├── metrics/
+│   ├── cluster_plots/                 
+│   ├── pca_outputs/                   
+│   ├── metrics/                       
+│   │
+│   └── customer_segments.csv          
 │
 ├── reports/
-│ ├── final_report.pdf
-│ ├── presentation.pptx
+│   ├── final_report.pdf               
+│   ├── presentation.pptx              
 │
-├── main.py
-├── requirements.txt
-└── README.md
-
+├── requirements.txt                   
+├── README.md                          
+└── main.py                            
 ---
 
 # ▶️ How to Run the Project
 
-## Step 1: Clone the Repository
+## Clone the Repository
 ```bash
 git clone <https://github.com/NiveditaDP/customer-segmentation-unsupervised>
 cd customer-segmentation-unsupervised
