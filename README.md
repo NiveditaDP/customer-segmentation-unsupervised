@@ -209,7 +209,7 @@ Models were evaluated using Silhouette Score:
 
 ---
 
-# 🚀 Advanced Techniques Implemented (For High Grades)
+# 🚀 Advanced Techniques Implemented
 
 ## 🔍 Feature Importance for Clusters
 Key features influencing segmentation:
